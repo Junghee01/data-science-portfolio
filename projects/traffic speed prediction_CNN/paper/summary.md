@@ -1,18 +1,5 @@
 ### [Paper] https://doi.org/10.3390/s17040818
-# Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction
- **Xiaolei Ma 1, Zhuang Dai 1, Zhengbing He 2, Jihui Ma 2,*, Yong Wang 3 and Yunpeng Wang 1**
-
- 1 School of Transportation Science and Engineering, Beijing Key Laboratory for Cooperative Vehicle
- Infrastructure System and Safety Control, Beihang University, Beijing 100191, China;
- xiaolei@buaa.edu.cn (X.M.); zhuangdai@buaa.edu.cn (Z.D.); ypwang@buaa.edu.cn (Y.W.)
- 
- 2 School of Traffic and Transportation, Beijing Jiaotong University, Beijing 100044, China; he.zb@hotmail.com
- 
- 3  School of Economics and Management, Chongqing Jiaotong University, Chongqing 400074, China; yongwx6@gmail.com
-  * Correspondence: jhma@bjtu.edu.cn; Tel.: +86-10-5168-8514
-  Academic Editor: Simon X. Yang
-
- Received: 30 January 2017; Accepted: 7 April 2017; Published: 10 April 2017
+##### Ma, X., Dai, Z., He, Z., Ma, J., Wang, Y., & Wang, Y. (2017). Learning traffic as images: A deep convolutional neural network for large-scale transportation network speed prediction. sensors, 17(4), 818.
 
 ### [Summary]
 이 논문은 합성곱 신경망(CNN) 기반의 방법을 제안하며, 교통 상황을 이미지로 학습하고 대규모 교통망 전반의 속도를 높은 정확도로 예측합니다. 시공간적인 교통 흐름의 변화를 2차원 시공간 행렬로 변환하여 시간과 공간상의 관계를 이미지로 표현하고, 이 이미지에 CNN을 적용합니다. 제안된 방법의 효과는 중국 베이징의 실제 교통 네트워크인 2차 순환도로와 북동부 교통망을 사례로 평가되며, OLS, KNN, ANN, random forest, SAE, RNN, 그리고 LSTM 과 같은 기존 알고리즘들과 비교합니다. 그 결과, 제안된 CNN 기반 방법은 평균적으로 다른 알고리즘보다 42.91% 높은 정확도 향상을 보였으며, 실행 시간도 수용 가능한 수준으로 나타났습니다.
