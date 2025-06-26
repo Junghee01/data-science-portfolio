@@ -1,6 +1,7 @@
-### [Paper]
+### [Paper] https://doi.org/10.3390/s17040818
 # Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction
- ### Xiaolei Ma 1, Zhuang Dai 1, Zhengbing He 2, Jihui Ma 2,*, Yong Wang 3 and Yunpeng Wang 1
+ **Xiaolei Ma 1, Zhuang Dai 1, Zhengbing He 2, Jihui Ma 2,*, Yong Wang 3 and Yunpeng Wang 1**
+
  1 School of Transportation Science and Engineering, Beijing Key Laboratory for Cooperative Vehicle
  Infrastructure System and Safety Control, Beihang University, Beijing 100191, China;
  xiaolei@buaa.edu.cn (X.M.); zhuangdai@buaa.edu.cn (Z.D.); ypwang@buaa.edu.cn (Y.W.)
