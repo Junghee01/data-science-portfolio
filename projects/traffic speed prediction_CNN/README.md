@@ -21,7 +21,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
 - **모델 구조**:
   - FC : Fully Connected layer 단독 구성(Depth1)
   - 2D CNN: 2~4개 Conv layer 구성(Depth2 ~ Depth4)
-  - 입력: 시계열+공간을 2D 이미지로 매핑한 matrix로, 과거 30분 및 40분 속도를 input으로 활용  
+  - 입력: 시계열+공간을 2D 이미지로 매핑한 matrix로, 과거 30분 및 40분의 이미지를 input으로 활용  
   - 출력: 향후 10분 과 20분 속도 예측
   
 ## 기존논문 설계와의 차이(프로젝트/ 해당논문)
