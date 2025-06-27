@@ -24,7 +24,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
   - 입력: 시계열+공간을 2D 이미지로 매핑한 matrix로, 과거 30분 및 40분의 이미지를 input으로 활용  
   - 출력: 향후 10분 과 20분 속도 예측
   
-## 기존논문 설계와의 차이(프로젝트/ 해당논문)
+## 📐기존논문 설계와의 차이(프로젝트/ 해당논문)
 - 분석 대상지 : 서울의 2개 도로 네트워크의 교통속도 예측 / 베이징 2개 도로 네트워크의 교통속도 예측
 - 비교 모델 : MLP / OLS, RF, ANN 외 4개 모델
 - Loss : MSE, MAE, original scaled MSE, original scaled MAE / original scaled MSE
