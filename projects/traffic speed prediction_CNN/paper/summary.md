@@ -17,10 +17,14 @@
 ![image](https://github.com/user-attachments/assets/dee1c858-de73-4c01-9e45-b45ed1ea556a)
 
 - Figure 2 에서 처럼 Convolution Layer, Max Pooling Layer 를 반복하고, 마지막에 FC Layer 를 통과하는 CNN 모델을 생성합니다.
+- 수식으로 나타내면 아래와 같습니다.
+#####  (Equation) ![image](https://github.com/user-attachments/assets/bce41be6-6fde-4afe-b6f6-626d43a3e1bc)
 - Table 1 에서 처럼 CNN 모델을 총 4개의 모델(Depth1, Depth2, Depth3, Depth4)로 생성하여 각 모델의 성능을 비교합니다. **이 때, Depth1은 Convolution layer 와 Pooling Layer가 없는 FC layer 단독으로 구성된 모델을 나타냅니다.**
 - 해당 논문은 37일 동안의 taxi data 활용하여 시간-공간 행렬을 이미지의 채널로 사용하며, input 값은 normalize 하여 모델 트레이닝이 어려워 지는 것을 방지합니다.
 - 해당 연구의 파라미터 튜닝에 관하여는, LeNet과 AlexNet(이미지 classification competition 우승)을 참고하여 파라미터 세팅하였는데, 즉, filter size는 (3,3), max pooling size는 (2,2)로 세팅하였습니다.
 - 해당 연구는 Early stopping criterion를 사용하여 모델의 오버피팅 문제가 발생하지 않도록 하였고, MSE를 예측값과 실제값의 거리측정을 위한 Loss 로 활용하였으며, activation function은 relu를 활용하였습니다. 
+
+
 
 ##### 3. 결과 설명
 ![image](https://github.com/user-attachments/assets/524f3f05-ceac-4d29-8a4f-d4015d1ce9c0)
