@@ -26,6 +26,6 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
   
 ## 기존논문 설계와의 차이(프로젝트/ 해당논문)
 - 분석 대상지 : 서울의 2개 도로 네트워크의 교통속도 예측 / 베이징 2개 도로 네트워크의 교통속도 예측
-- 비교 모델 : MLP / OLS, RF, RNN 외 4개 모델
+- 비교 모델 : MLP / OLS, RF, ANN 외 4개 모델
 - Loss : MSE, MAE, original scaled MSE, original scaled MAE / original scaled MSE
 - 파라미터 : hid_dim, l2, use_bn, dropout, lr, use_early_stopping, use_scheduler / use_early_stopping 만 명시됨
