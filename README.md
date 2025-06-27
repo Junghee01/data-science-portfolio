@@ -43,4 +43,4 @@
 
 ## 📬 Contact
 - Email: jung220901@gmail.com  
-- LinkedIn: linkedin.com/in/junghee220901
+- LinkedIn: www.linkedin.com/in/junghee220901
