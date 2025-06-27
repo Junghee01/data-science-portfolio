@@ -1,7 +1,7 @@
 # CNN-based Traffic Speed Prediction in Seoul
 
 본 프로젝트는 CNN(Convolutional Neural Network)을 활용하여 서울시 주요 도로의 교통 속도를 예측하는 모델을 구현하고, 성능을 평가한 실험입니다.
-CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction) 를 참고하여 서울의 중심도로와 도심도로에 적용한 프로젝트로, 해당 논문에서 활용하고 있는 TASK 4개에 대해 실험한 프로젝트입니다.
+CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction) 를 참고하여 서울의 중심도로와 도심도로에 적용한 프로젝트로, 해당 논문에서 설계한 TASK 4개에 대해 실험한 프로젝트입니다.
 - Task 1: 10-min traffic prediction using last 30-min traffic speeds;  
 - Task 2: 10-min traffic prediction using last 40-min traffic speeds;  
 - Task 3: 20-min traffic prediction using last 30-min traffic speeds; and 
