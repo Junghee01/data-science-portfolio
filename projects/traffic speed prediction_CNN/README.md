@@ -12,7 +12,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
 - 시계열 교통 데이터를 이미지 형태로 변환하여 CNN에 입력  
 - 시·공간적 패턴을 학습해 미래 속도 예측 정확도 향상
 - Convolution layer의 깊이에 따른 4가지 모델의 성능 비교
-- CNN 모델과 MLP 모델의 예측 성능 비교
+- MLP 모델과의 예측 성능 비교
 
 ## 프로젝트 개요
 - **데이터 출처**: [서울 열린데이터광장](https://data.seoul.go.kr) / TOPIS 2018년 4월 교통 속도 데이터  
