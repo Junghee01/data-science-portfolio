@@ -30,4 +30,6 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
 - Loss : MSE, MAE, original scaled MSE, original scaled MAE / original scaled MSE
   - 다양한 Loss 활용 이유 : 정규화 데이터에서의 MSE 가 작은 단위로 나와 MAE를 추가적으로 확인하였으며, 두 Loss 값을 원자료 스케일로 환산하여 성능 비교를 명확히 하기 위함
 - 파라미터 : hid_dim, l2, use_bn, dropout, lr, use_early_stopping, use_scheduler / use_early_stopping 만 명시됨
-  - 파라미터 추가 이유 : 가장 좋은 예측 성능을 만드는 모델로 튜닝하기 위함
+  - hid_dim 파라미터 추가이유 : 좋은 예측 성능을 만드는 모델로 튜닝하기 위함
+  - l2, use_bn, dropout 파라미터 추가 이유 : Over-fitting 을 방지함으로써, 일반화된 모델을 만들어 val data와 test data에서 예측 성능 향상을 위함
+  - use_scheduler 추가 이유 : early_stopping 과 함께 learning rate를 적용하면 Loss에 따라 적절하게 lr이 줄어들면서 효율적인 모델 트레이닝이 가능하기 때문
