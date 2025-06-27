@@ -30,8 +30,7 @@
 - 주요 기법: Spatio-temporal matrix, CNN 모델 depth에 따른 비교, MLP와 성능비교
 - 결과: Depth 2 모델이 가장 낮은 MSE 달성, MLP 보다 좋은 성능 확인
 
-→ [프로젝트 상세 보기](./traffic speed prediction_CNN)
-
+→ [프로젝트 상세 보기](projects/traffic speed prediction_CNN/data/Readme.md)
 ---
 
 ## 📌 향후 추가 예정
