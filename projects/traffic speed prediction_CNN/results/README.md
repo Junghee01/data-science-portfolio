@@ -26,3 +26,5 @@
 - 위 그림은 MLP 과 Best CNN 모델을 비교한 것으로, 서울 Urban Core Dataset에서 MLP 모델이 조금 더 좋은 성능을 보여줍니다.
   ![image](https://github.com/user-attachments/assets/44f5c934-fb10-4eb7-8d1a-f8f259c1b60f)
 - 위 그림은 MLP로 예측한 예측값과 실제값을 heatmap으로 시각화 한 것입니다.
+  ![image](https://github.com/user-attachments/assets/d106795a-d56d-4057-9fcb-5a33bfe5c532)
+- 위 그림은 Best CNN model로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
