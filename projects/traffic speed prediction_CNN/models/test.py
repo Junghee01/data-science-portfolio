@@ -1,6 +1,3 @@
-
-
-
 def test(net, partition, args):
     testloader = torch.utils.data.DataLoader(partition['test'],
                                              batch_size=args.test_batch_size,
