@@ -38,7 +38,7 @@ def train(net, partition, optimizer, criterion, args):
             batch_orig_mse += orig_loss.item() * inputs.size(0)
 
     train_loss = train_loss / total
-    train_mae_loss = train_mae / total   # 전체 data에 대한 평균 mae 출력
+    train_mae_loss = train_mae / total  
     train_orig_loss = batch_orig_mse / total if y_scaler is not None else None
 
     return net, train_loss, train_orig_loss, train_mae_loss    
