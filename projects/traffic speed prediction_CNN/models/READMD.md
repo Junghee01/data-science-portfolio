@@ -8,6 +8,7 @@
 - `preprocess.py` : 데이터 전처리
 - `utils.py` : 시각화 함수
 
+---
 본 프로젝트의 코드는 [Standalone-DeepLearning]의 강의 자료를 기반으로 변형 및 확장하여 작성되었습니다.
 
 - 원본 강의 자료: [[강의 URL 또는 GitHub 링크](https://github.com/heartcored98/Standalone-DeepLearning/blob/master/Lec5/Lab7_CIFAR-10_with_CNN.ipynb)]
