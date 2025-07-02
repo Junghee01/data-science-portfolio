@@ -1,5 +1,4 @@
 def validate(net, partition, criterion, args):
-    #set_seed(42)
     valloader = torch.utils.data.DataLoader(partition['val'],
                                             batch_size=args.test_batch_size,
                                             shuffle=False, num_workers=2)
