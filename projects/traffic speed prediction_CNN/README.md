@@ -34,7 +34,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
   - l2, use_bn, dropout 추가 이유 : Over-fitting 을 방지함으로써, 일반화된 모델을 만들어 val data와 test data에서 예측 성능 향상을 위함
   - scheduler_learning_rate 추가 이유 : early_stopping 과 함께 learning rate를 적용하면 Loss에 따라 적절하게 lr이 줄어들면서 효율적인 모델 트레이닝이 가능하기 때문
 
---
+---
 💡 본 프로젝트의 코드는 [Standalone-DeepLearning]의 강의 자료를 기반으로 변형 및 확장하여 작성되었습니다.
 
 - 원본 강의 자료: [[강의 GitHub 링크]([https://github.com/heartcored98/Standalone-DeepLearning/blob/master/Lec5/Lab7_CIFAR-10_with_CNN.ipynb](https://github.com/heartcored98/Standalone-DeepLearning/tree/master])
