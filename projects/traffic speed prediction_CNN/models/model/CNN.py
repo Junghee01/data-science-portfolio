@@ -3,7 +3,6 @@ class CNN(nn.Module):
     def __init__(self, model_code, in_channels, out_dim, act, use_bn, dropout, hid_dim):
         super(CNN, self).__init__()
 
-
         if act == 'relu' :
             self.act = nn.ReLU()
         elif act == 'sigmoid' :
@@ -13,21 +12,11 @@ class CNN(nn.Module):
         else :
             raise ValueError("Not a valid activation function code")
 
-
-
         self.layers = self._make_layers(model_code, in_channels, use_bn)  
-
         dummy_input = torch.zeros(1, in_channels, 304, 8)   
         flatten_size = self._get_flattened_size(dummy_input)  
+        self.classifier = nn.Sequential(nn.Linear(flatten_size, out_dim))
 
-        self.classifier = nn.Sequential(nn.Linear(flatten_size, out_dim),              
-                                        )
-
-        #self.classifier = nn.Sequential(nn.Linear(flatten_size, hid_dim),         
-        #                                self.act,
-        #                                nn.Dropout(dropout),              
-        #                                nn.Linear(hid_dim, out_dim),
-        #                                )
 
     def forward(self, x):         
         x = self.layers(x)
@@ -37,7 +26,7 @@ class CNN(nn.Module):
         #print("After flatten:", x.shape)
 
         x = self.classifier(x)
-        x = x.view(x.size(0), 1, 304, 2)   # 이부분 추가 (마지막 output shape 변경)
+        x = x.view(x.size(0), 1, 304, 2)   
         return x
 
     def _make_layers(self, model_code, in_channels, use_bn) :   
@@ -60,7 +49,6 @@ class CNN(nn.Module):
                                       stride =1,
                                       padding =1) ]
 
-
                   if use_bn :
                         layers += [nn.BatchNorm2d(x)]           
                   layers += [self.act]
@@ -68,6 +56,7 @@ class CNN(nn.Module):
                   in_channels = x
           return nn.Sequential(*layers)      
 
+    
     def _get_flattened_size(self, x) :        
         x = self.layers(x)
         return x.view(x.size(0), -1).size(1)
