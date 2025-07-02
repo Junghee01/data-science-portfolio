@@ -1,5 +1,4 @@
 def train(net, partition, optimizer, criterion, args):
-    #set_seed(42)
     trainloader = torch.utils.data.DataLoader(partition['train'],
                                               batch_size=args.train_batch_size,
                                               shuffle=True, num_workers=2)
