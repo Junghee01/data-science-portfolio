@@ -15,6 +15,7 @@
 ![image](https://github.com/user-attachments/assets/5e72274b-4dd5-4d49-b7b1-b5a513ed6db8)
 - 위의 Figure는 Best CNN model(Depth 2)로 실제 값과 예측값의 차이를 heatmap으로 시각한 결과입니다.
 
+--
 
   ## 📊Task 2 Result
   ![image](https://github.com/user-attachments/assets/672762be-6e76-4667-a003-6c161492e9a7)
@@ -25,6 +26,5 @@
   ![image](https://github.com/user-attachments/assets/1e4b53fa-c791-45a9-9faf-a8912895bcc1)
 - 위 그림은 MLP 과 Best CNN 모델을 비교한 것으로, 서울 Urban Core Dataset에서 MLP 모델이 조금 더 좋은 성능을 보여줍니다.
   ![image](https://github.com/user-attachments/assets/44f5c934-fb10-4eb7-8d1a-f8f259c1b60f)
-- 위 그림은 MLP로 예측한 예측값과 실제값을 heatmap으로 시각화 한 것입니다.
   ![image](https://github.com/user-attachments/assets/d106795a-d56d-4057-9fcb-5a33bfe5c532)
-- 위 그림은 Best CNN model로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
+- 위 그림은 MLP와 Best CNN model로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
