@@ -23,8 +23,10 @@
 - 위의 Figure가 범위로 나타나는 이유는, hidden dimension 에 따라 어떻게 달라지는 지를 함께 나타낸 것입니다. hidden_dim 이 달라지더라도 Depth 2에서 가장 좋은 성능을 보입니다.
 
 - Multi Layer Perceptron(MLP) 모델을 활용하여 동일한 실험을 진행하였으며, CNN과의 성능비교 결과는 아래와 같습니다.
-  ![image](https://github.com/user-attachments/assets/1e4b53fa-c791-45a9-9faf-a8912895bcc1)
-- 위 그림은 MLP 과 Best CNN 모델을 비교한 것으로, 서울 Urban Core Dataset에서 MLP 모델이 조금 더 좋은 성능을 보여줍니다.
-  ![image](https://github.com/user-attachments/assets/44f5c934-fb10-4eb7-8d1a-f8f259c1b60f)
-  ![image](https://github.com/user-attachments/assets/d106795a-d56d-4057-9fcb-5a33bfe5c532)
-- 위 그림은 MLP와 Best CNN model로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
+- MLP 과 Best CNN 모델을 비교한 것으로, 서울 Urban Core Dataset에서 CNN 모델이 조금 더 좋은 성능을 보여줍니다.
+- 가장 아래 두 그림은 MLP와 Best CNN model로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
+![image](https://github.com/user-attachments/assets/2833c73b-0bd3-40ed-a1cb-85b862612047)
+![image](https://github.com/user-attachments/assets/3624d1d5-d41c-48bb-878d-1a2d2417c653)
+![image](https://github.com/user-attachments/assets/c9b38019-07bd-4d0d-93c4-8182bb9a28cc)
+
+
