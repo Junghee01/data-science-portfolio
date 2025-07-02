@@ -9,3 +9,7 @@
 - Test data 에서 MSE가 더 낮은 이유를 추론하면,
   1) L2, dropout regularization 활용하여 train data에 덜 과적합 되고 일반화 성능이 높아지게 되기 때문이며,
   2) Early stopping 을 사용하여 val data 기준으로 모델학습을 멈추기 때문입니다.
+
+
+![image](https://github.com/user-attachments/assets/71668b9a-876c-4794-8f0f-73712bc68289)
+- 위의 Figure는 Best CNN model(Depth 2)로 실제 값과 예측값의 차이를 heatmap으로 시각한 결과입니다.
