@@ -27,31 +27,23 @@ spatio_temporal_images = np.array([
     for i in range(num_images)
 ])
 
-# Shape of spatio_temporal_images: [num_images, num_link_ids, num_timestamps_per_image]
 
 
 # Create input data
-temp_target =spatio_temporal_images[:, :, :2]   # 앞의 두개의 timestpamt만 남기고 두번째 부터 target 값으로 설정
+temp_target =spatio_temporal_images[:, :, :2]   
 final_y_data = temp_target[1:]
 final_x_data =spatio_temporal_images[:-1]
 
 # Split data into train, val, and test set
-# Define the size of the test set
 test_size = 0.23
-
-# First split: Separate out the test set
 X_temp, X_test_, y_temp, y_test_ = train_test_split(
     final_x_data, final_y_data, test_size=test_size, random_state=42
 )
 
-# Define the size of the validation set relative to the temporary training set
 val_size = 0.07 / (1 - test_size)
-
-# Second split: Separate out the validation set from the (temporary) training set
 X_train_, X_val_, y_train_, y_val_ = train_test_split(
     X_temp, y_temp, test_size=val_size, random_state=42
 )
-
 
 # Apply Min-Max Scaling
 X_scaler = MinMaxScaler()
