@@ -14,7 +14,7 @@
 
 ![image](https://github.com/user-attachments/assets/5e72274b-4dd5-4d49-b7b1-b5a513ed6db8)
 - 위의 Figure는 Best CNN model(Depth 2)로 실제 값과 예측값의 차이를 heatmap으로 시각한 결과입니다.
-
+- 위의 Figure가 범위로 나타나는 이유는, hidden dimension 에 따라 어떻게 달라지는 지를 함께 나타낸 것입니다. hidden_dim 이 달라지더라도 Depth 2에서 가장 좋은 성능을 보입니다.
 
   ## Task 2 Result
   ![image](https://github.com/user-attachments/assets/672762be-6e76-4667-a003-6c161492e9a7)
