@@ -31,6 +31,26 @@
 ![image](https://github.com/user-attachments/assets/c9b38019-07bd-4d0d-93c4-8182bb9a28cc)
 
 
+---
+
+  ## 📊Task 3 Result
+![image](https://github.com/user-attachments/assets/f9f70817-4103-46f2-8512-be1a7577378b)
+- Task 3 에서도 Depth 2 CNN 모델의 MSE 가 가장 작은 것을 확인할 수 있습니다.
+- MLP 모델을 활용하여 동일한 실험을 진행하였으며, CNN 과의 성능비교 결과는 아래와 같으며, CNN 모델에서 더 좋은 성능을 나타냄을 보여줍니다.
+![image](https://github.com/user-attachments/assets/a516f471-ef06-4464-b2cd-d381e0c3657b)
+![image](https://github.com/user-attachments/assets/7d8f85d2-8523-46a2-8d5a-914902a08a83)
+- 위 그림은 CNN 모델로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
+
+ ---
+
+  ## 📊Task 4 Result
+![image](https://github.com/user-attachments/assets/c186d492-e6bf-4710-81e0-d3f658ffdaf7)
+- Task 4에서는 Depth 2와 Depth4에서 가장 좋은 MSE를 보여주나, Depth 2에서 미세하게 더 좋은 성능을 나타냈습니다.
+- MLP 모델을 활용하여 동일한 실험을 진행하였으며, CNN 과의 성능비교 결과는 아래와 같으며, CNN 모델에서 더 좋은 성능을 나타냄을 보여줍니다.
+![image](https://github.com/user-attachments/assets/12eef6d8-14fa-4dec-9b9a-b210afa6a9a8)
+![image](https://github.com/user-attachments/assets/addf893b-f28d-4b76-a8df-ef43a5e6aeab)
+- 위 그림은 CNN 모델로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
+  
 --- 
 
 ## 📋전체 결과 비교(Task1~Task4)
