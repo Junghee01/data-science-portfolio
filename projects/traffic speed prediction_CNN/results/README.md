@@ -31,3 +31,11 @@
 ![image](https://github.com/user-attachments/assets/c9b38019-07bd-4d0d-93c4-8182bb9a28cc)
 
 
+--- 
+
+## 📊전체 결과 비교
+![image](https://github.com/user-attachments/assets/e30bcf54-e773-4c14-aea9-b1ecfdbccdcf)
+![image](https://github.com/user-attachments/assets/daad5d3a-4708-42c4-a288-b2698334b77a)
+![image](https://github.com/user-attachments/assets/ddd2470d-e4ce-4864-892b-5ea8da52638b)
+![image](https://github.com/user-attachments/assets/daf28d9d-e89c-4dad-a974-fe7c82629802)
+
