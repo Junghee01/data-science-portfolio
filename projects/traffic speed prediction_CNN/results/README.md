@@ -1,4 +1,4 @@
-# Seoul Urban Core – Traffic Speed Prediction Results
+# [Seoul Urban Core – Traffic Speed Prediction Results]
   ## 📊Task 1 Result 
   ![image](https://github.com/user-attachments/assets/d0dbe46b-6fd3-4cc9-9e24-a40f18efa0a3)
 - FC layer로만 구성된 모델(Depth1) 보다 CNN 모델(Depth2~Depth4)에서 MSE 가 월등히 작은 것을 확인하였습니다.
