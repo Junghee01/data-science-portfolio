@@ -51,9 +51,8 @@
 - MLP 모델을 활용하여 동일한 실험을 진행하였으며, CNN 과의 성능비교 결과는 아래와 같으며, CNN 모델에서 더 좋은 성능을 나타냄을 보여줍니다.
 ![image](https://github.com/user-attachments/assets/12eef6d8-14fa-4dec-9b9a-b210afa6a9a8)
 - 아래 그림은 MLP와 CNN 모델로 예측한 값과 실제값을 heatmap으로 시각화 한 것입니다.
-![image](https://github.com/user-attachments/assets/addf893b-f28d-4b76-a8df-ef43a5e6aeab)
 ![image](https://github.com/user-attachments/assets/f2902b40-aae4-4a6e-b5c7-e52b35d54035)
-
+![image](https://github.com/user-attachments/assets/addf893b-f28d-4b76-a8df-ef43a5e6aeab)
   
 --- 
 
