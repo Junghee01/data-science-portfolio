@@ -16,7 +16,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
 
 ## 🧪 프로젝트 개요
 - **데이터 출처**: [서울 열린데이터광장](https://data.seoul.go.kr) / TOPIS 2018년 4월 교통 속도 데이터  
-- **예측 대상**: 도시중심부도로와 도심도로의 도로 링크 별 향후 10분 및 20분 동안의 속도 예측
+- **예측 대상**: 도시중심부 도로의 도로 링크 별 향후 10분 및 20분 동안의 속도 예측
 - **기술 스택**: Python, PyTorch, NumPy, Matplotlib, Seaborn, Pandas  
 - **모델 구조**:
   - FC : Fully Connected layer 단독 구성(Depth1)
@@ -25,7 +25,7 @@ CNN Paper(Learning Traffic as Images: A Deep Convolutional Neural Network for La
   - 출력: 향후 10분 과 20분 속도 예측
   
 ## 📐기존논문 설계와의 차이(프로젝트/ 해당논문)
-- 분석 대상지 : 서울의 2개 도로 네트워크의 교통속도 예측 / 베이징 2개 도로 네트워크의 교통속도 예측
+- 분석 대상지 : 서울의 도로 네트워크 / 베이징 도로 네트워크
 - 비교 모델 : MLP / OLS, RF, ANN 외 4개 모델
 - Loss : MSE, MAE, original scaled MSE, original scaled MAE / original scaled MSE
   - 다양한 Loss 활용 이유 : 정규화 데이터에서의 MSE 가 작은 단위로 나와 MAE를 추가적으로 확인하였으며, 두 Loss 값을 원자료 스케일로 환산하여 성능 비교를 명확히 하기 위함
