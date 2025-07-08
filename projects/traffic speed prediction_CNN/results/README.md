@@ -33,9 +33,8 @@
 
 --- 
 
-## 📊전체 결과 비교
-![image](https://github.com/user-attachments/assets/e30bcf54-e773-4c14-aea9-b1ecfdbccdcf)
-![image](https://github.com/user-attachments/assets/daad5d3a-4708-42c4-a288-b2698334b77a)
-![image](https://github.com/user-attachments/assets/ddd2470d-e4ce-4864-892b-5ea8da52638b)
-![image](https://github.com/user-attachments/assets/daf28d9d-e89c-4dad-a974-fe7c82629802)
-
+## 📊Task1 ~ Task4 결과 비교
+![image](https://github.com/user-attachments/assets/fba9e4c9-1947-47c1-8b54-3fc739384052)
+- 모든 Task 에서 MLP 모델보다 CNN 모델에서 성능이 좋음을 보여줍니다.
+- 향후 10 분 속도를 예측할 경우, 과거 30분 데이터를 활용하는 것이 과거 40분 데이터를 활용 할 때 보다 예측 정확도가 높습니다.
+- 향후 20 분 속도를 예측할 경우, 과거 40분 데이터를 활용하는 것이 과거 30분 데이터를 활용 할 때 보다 예측 정확도가 높습니다.
