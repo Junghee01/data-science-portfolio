@@ -1,6 +1,6 @@
 # 1. Urban Core Dataset
   ## 📊Task 1 Result 
-  ![image](https://github.com/user-attachments/assets/ea82719a-2b31-4b1a-a89b-2a1008058229)
+  ![image](https://github.com/user-attachments/assets/d0dbe46b-6fd3-4cc9-9e24-a40f18efa0a3)
 - FC layer로만 구성된 모델(Depth1) 보다 CNN 모델(Depth2~Depth4)에서 MSE 가 월등히 작은 것을 확인하였습니다.
 - CNN 모델 중 Depth2에서 가장 좋은 MSE 가 나타나며, 이는 모델의 깊이가 깊다고 좋은 성능을 나타내는 것은 아님을 보여줍니다.
 - 참고한 논문과의 차이점은, 북경 내 도로 데이터에서의 결과는 Depth4 에서 성능이 가장 높게 나타났다는 것입니다. 이부분은 데이터의 차이에서 나타나는 결과 일 수 있으며, 즉, Urban core 데이터 특성에 최적화된 모델은 더 shallow 한 구조 임을 확인할 수 있습니다. 
@@ -12,7 +12,7 @@
 
 
 
-![image](https://github.com/user-attachments/assets/5e72274b-4dd5-4d49-b7b1-b5a513ed6db8)
+![image](https://github.com/user-attachments/assets/6a1077f2-e701-4fcb-9099-a6716b60a1d0)
 - 위의 Figure는 Best CNN model(Depth 2)로 실제 값과 예측값의 차이를 heatmap으로 시각한 결과입니다.
 
 ---
