@@ -37,39 +37,44 @@ The study reproduces and evaluates the four experimental settings proposed in th
 
 ---
 
-## 📐 Differences from the Original Paper
+## 📐 Differences from the Original Study
 
-### Study Domain
-- Original: Beijing road network  
-- This study: Seoul urban road network  
+This section summarizes the key methodological differences between the original paper and this project.
 
-### Baseline Models
-- Original: OLS, Random Forest, ANN, and other ML/statistical models  
-- This study: Multilayer Perceptron (MLP) as the primary baseline  
+| Aspect | Original Study | This Project |
+|--------|----------------|--------------|
+| **Study Area** | Beijing road network | Seoul urban road network |
+| **Baseline Models** | OLS, Random Forest, ANN, and additional ML/statistical models | Multilayer Perceptron (MLP) as the primary fully connected baseline |
+| **Loss Functions** | MSE, MAE, scaled MSE (original scale-based evaluation) | MSE, MAE, and inverse-transformed (original-scale) MSE/MAE |
 
-### Evaluation Metrics
-- Original: MSE, MAE, scaled MSE, scaled MAE  
-- This study: MSE and MAE, additionally reported in original scale for interpretability  
+### Loss Function Rationale
+Although MSE computed on normalized data can yield small numerical values, it is not always directly interpretable. Therefore, MAE is additionally considered, and both metrics are also transformed back to the original scale to ensure a more interpretable and consistent performance comparison.
 
-**Rationale:**  
-Although MSE on normalized data is useful for optimization, MAE and inverse-scaled metrics provide more interpretable performance comparisons.
+---
 
-### Hyperparameters
-- Original: limited hyperparameter tuning (mainly early stopping)  
-- This study: extended configuration including:
-  - hidden dimension (`hid_dim`)  
-  - L2 regularization  
-  - batch normalization (`use_bn`)  
-  - dropout  
-  - learning rate (`lr`)  
-  - learning rate scheduler  
-  - early stopping  
+| Aspect | Original Study | This Project |
+|--------|----------------|--------------|
+| **Hyperparameter Specification** | Limited (primarily early stopping) | Extended hyperparameter search and tuning |
 
-**Rationale:**
-- `hid_dim`: improves model capacity  
-- Regularization methods (L2, dropout, batch norm): reduce overfitting and improve generalization  
-- Learning rate scheduler: stabilizes optimization and improves convergence when combined with early stopping  
+### Hyperparameter Design
 
+| Hyperparameter | Original Study | This Project | Purpose / Motivation |
+|----------------|----------------|--------------|----------------------|
+| `hid_dim` | Not explicitly explored | Included | To increase model capacity and improve predictive performance |
+| `L2 regularization` | Not specified | Included | To reduce overfitting and improve generalization |
+| `Batch Normalization (use_bn)` | Not specified | Included | To stabilize training and improve convergence |
+| `Dropout` | Not specified | Included | To prevent overfitting in dense feature representations |
+| `Learning rate (lr)` | Basic setting | Tuned | To improve optimization efficiency |
+| `Learning rate scheduler` | Not used | Included | To dynamically adjust learning rate for better convergence |
+| `Early stopping` | Used | Used | To prevent overfitting and reduce unnecessary training |
+
+---
+
+### Design Rationale Summary
+
+- **Model capacity control (`hid_dim`)** improves representational power for complex spatio-temporal patterns.  
+- **Regularization techniques (L2, dropout, batch normalization)** reduce overfitting and improve robustness on unseen validation/test data.  
+- **Learning rate scheduling combined with early stopping** enables more stable and efficient optimization by adapting the learning rate based on training dynamics.  
 ---
 
 ## 🧠 Summary
