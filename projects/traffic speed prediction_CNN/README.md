@@ -45,7 +45,7 @@ This section summarizes the key methodological differences between the original 
 |--------|----------------|--------------|
 | **Study Area** | Beijing road network | Seoul urban road network |
 | **Baseline Models** | OLS, Random Forest, ANN, and 4 additional models | Multilayer Perceptron (MLP) as the primary fully connected baseline |
-| **Loss Functions** | MSE, MAE, scaled MSE (original scale-based evaluation) | MSE, MAE, and inverse-transformed (original-scale) MSE/MAE |
+| **Loss Functions** | (original scale) MSE | MSE, MAE, and inverse-transformed (original-scale) MSE/MAE |
 
 ### Loss Function Rationale
 Although MSE computed on normalized data can yield small numerical values, it is not always directly interpretable. Therefore, MAE is additionally considered, and both metrics are also transformed back to the original scale to ensure a more interpretable and consistent performance comparison.
