@@ -1,6 +1,6 @@
 ## 📁 Projects
 
-### 1. 🛣️ Traffic Speed Prediction in Seoul Using CNNs
+###  🛣️ Traffic Speed Prediction in Seoul Using CNNs
 
 This project investigates short-term traffic speed forecasting by transforming spatio-temporal traffic data into 2D image representations and applying Convolutional Neural Networks (CNNs) to model network-wide future traffic conditions.
 
