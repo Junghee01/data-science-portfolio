@@ -1,8 +1,6 @@
 # 🛣️ CNN-based Traffic Speed Prediction in Seoul
 
-This project implements and evaluates a Convolutional Neural Network (CNN) for short-term traffic speed prediction in Seoul.
-
-Inspired by *"Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction"*, this work adapts the original framework to Seoul’s urban road network, focusing on both central and downtown regions.
+This study implements and evaluates a Convolutional Neural Network (CNN) for short-term traffic speed prediction in Seoul. It builds upon the framework proposed by Ma et al. (2017), Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction, adapting it to Seoul’s urban road network with a focus on the central urban area.
 
 The study reproduces and evaluates the four experimental settings proposed in the paper:
 
