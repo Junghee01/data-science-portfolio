@@ -44,7 +44,7 @@ This section summarizes the key methodological differences between the original 
 | Aspect | Original Study | This Project |
 |--------|----------------|--------------|
 | **Study Area** | Beijing road network | Seoul urban road network |
-| **Baseline Models** | OLS, Random Forest, ANN, and additional ML/statistical models | Multilayer Perceptron (MLP) as the primary fully connected baseline |
+| **Baseline Models** | OLS, Random Forest, ANN, and 4 additional models | Multilayer Perceptron (MLP) as the primary fully connected baseline |
 | **Loss Functions** | MSE, MAE, scaled MSE (original scale-based evaluation) | MSE, MAE, and inverse-transformed (original-scale) MSE/MAE |
 
 ### Loss Function Rationale
