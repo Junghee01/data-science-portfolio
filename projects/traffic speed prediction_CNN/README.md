@@ -50,8 +50,6 @@ This section summarizes the key methodological differences between the original 
 ### Loss Function Rationale
 Although MSE computed on normalized data can yield small numerical values, it is not always directly interpretable. Therefore, MAE is additionally considered, and both metrics are also transformed back to the original scale to ensure a more interpretable and consistent performance comparison.
 
----
-
 ### Hyperparameter Design
 
 | Hyperparameter | Original Study | This Project | Purpose / Motivation |
