@@ -74,9 +74,4 @@ Although MSE on normalized data is useful for optimization, MAE and inverse-scal
 
 ## 🧠 Summary
 
-This project investigates CNN-based spatio-temporal learning for traffic speed prediction and evaluates the impact of model depth, temporal input windows, and baseline architectures. The results highlight the trade-off between CNN-based feature extraction and simpler fully connected models in urban traffic forecasting.
----
-
-## 🧠 Summary
-
 This project provides an empirical study on CNN-based spatio-temporal learning for urban traffic forecasting. The results highlight that performance is highly sensitive to architectural depth, temporal context length, and representation design, and demonstrate the trade-offs between deep convolutional architectures and simpler fully connected models in real-world traffic prediction tasks.
