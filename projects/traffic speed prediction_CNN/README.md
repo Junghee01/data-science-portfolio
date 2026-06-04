@@ -52,10 +52,6 @@ Although MSE computed on normalized data can yield small numerical values, it is
 
 ---
 
-| Aspect | Original Study | This Project |
-|--------|----------------|--------------|
-| **Hyperparameter Specification** | Limited (primarily early stopping) | Extended hyperparameter search and tuning |
-
 ### Hyperparameter Design
 
 | Hyperparameter | Original Study | This Project | Purpose / Motivation |
