@@ -1,112 +1,80 @@
-# 🛣️ CNN-based Spatio-Temporal Traffic Speed Prediction in Urban Road Networks (Seoul Case Study)
+# 🛣️ CNN-based Traffic Speed Prediction in Seoul
 
-## 📄 Abstract
+This project implements and evaluates a Convolutional Neural Network (CNN) for short-term traffic speed prediction in Seoul.
 
-Accurate short-term traffic speed prediction is a fundamental problem in intelligent transportation systems, requiring effective modeling of complex spatio-temporal dependencies in urban road networks.  
+Inspired by *"Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction"*, this work adapts the original framework to Seoul’s urban road network, focusing on both central and downtown regions.
 
-In this study, we investigate Convolutional Neural Networks (CNNs) for traffic speed forecasting by reformulating traffic time series as 2D image-like representations. Building upon the framework introduced in *"Learning Traffic as Images: A Deep Convolutional Neural Network for Large-Scale Transportation Network Speed Prediction"*, we adapt and evaluate the model on Seoul’s urban road network using real-world traffic data.
+The study reproduces and evaluates the four experimental settings proposed in the paper:
 
-We systematically evaluate multiple prediction horizons and historical input windows, and analyze the impact of network depth on predictive performance. Furthermore, we compare CNN-based architectures against a Multilayer Perceptron (MLP) baseline to assess the benefit of explicit spatial feature extraction.
-
----
-
-## 🎯 Research Objectives
-
-This project aims to:
-
-- Reformulate spatio-temporal traffic data into structured 2D representations suitable for CNN-based learning  
-- Capture spatial dependencies and temporal dynamics for short-term traffic speed prediction  
-- Evaluate the effect of CNN architectural depth on forecasting performance  
-- Compare deep convolutional models against a fully connected neural network (MLP) baseline  
-- Analyze the trade-off between representation learning capacity and model simplicity in urban traffic forecasting  
+- **Task 1:** 10-minute prediction using past 30-minute traffic speeds  
+- **Task 2:** 10-minute prediction using past 40-minute traffic speeds  
+- **Task 3:** 20-minute prediction using past 30-minute traffic speeds  
+- **Task 4:** 20-minute prediction using past 40-minute traffic speeds  
 
 ---
 
-## 🧪 Experimental Design
+## 🎯 Objectives
 
-We follow and extend the experimental settings from the original paper, defining four prediction tasks:
-
-- **Task 1:** Predict 10-minute traffic speed using the past 30 minutes  
-- **Task 2:** Predict 10-minute traffic speed using the past 40 minutes  
-- **Task 3:** Predict 20-minute traffic speed using the past 30 minutes  
-- **Task 4:** Predict 20-minute traffic speed using the past 40 minutes  
-
-These configurations allow systematic evaluation of temporal context length and prediction horizon.
+- Transform spatio-temporal traffic data into 2D image-like representations for CNN input  
+- Learn spatial and temporal dependencies for traffic speed prediction  
+- Analyze the effect of CNN depth on performance (4 model variants)  
+- Compare CNN models against a Multilayer Perceptron (MLP) baseline  
 
 ---
 
-## 📊 Dataset
+## 🧪 Project Overview
 
-- **Source:** Seoul Open Data Plaza (TOPIS traffic speed dataset)  
-- **Period:** April 2018  
-- **Spatial Scope:** Central and urban road network links in Seoul  
-- **Task:** Link-level traffic speed forecasting  
+- **Data Source:** Seoul Open Data Plaza (TOPIS traffic speed data, April 2018)  
+- **Prediction Target:** Link-level traffic speeds for 10- and 20-minute horizons in urban road networks  
+- **Tech Stack:** Python, PyTorch, NumPy, Pandas, Matplotlib, Seaborn  
 
----
+### Model Architectures
 
-## 🧠 Methodology
-
-### Input Representation
-
-Traffic time series are transformed into structured spatio-temporal matrices and reshaped into 2D image-like tensors, enabling convolutional feature extraction over both spatial and temporal dimensions.
-
-### Models
-
-- **Baseline:** Multilayer Perceptron (MLP) with fully connected layers  
-- **Proposed Models:** 2D CNN architectures with varying depth (2–4 convolutional layers)
-
-### Output
-
-- Short-term traffic speed prediction for:
-  - 10-minute horizon  
-  - 20-minute horizon  
+- **MLP (Fully Connected Network):** baseline model  
+- **2D CNN Models:** 2–4 convolutional layers (Depth 2 to Depth 4)  
+- **Input:** Spatio-temporal traffic matrices converted into 2D image-like tensors using past 30- and 40-minute windows  
+- **Output:** Future traffic speed prediction (10-minute and 20-minute horizons)  
 
 ---
 
-## ⚙️ Implementation Details
+## 📐 Differences from the Original Paper
 
-- **Framework:** PyTorch  
-- **Language:** Python  
-- **Libraries:** NumPy, Pandas, Matplotlib, Seaborn  
+### Study Domain
+- Original: Beijing road network  
+- This study: Seoul urban road network  
 
-### Hyperparameter Design
+### Baseline Models
+- Original: OLS, Random Forest, ANN, and other ML/statistical models  
+- This study: Multilayer Perceptron (MLP) as the primary baseline  
 
-To improve generalization and optimization stability, the following hyperparameters were introduced and tuned:
+### Evaluation Metrics
+- Original: MSE, MAE, scaled MSE, scaled MAE  
+- This study: MSE and MAE, additionally reported in original scale for interpretability  
 
-- Hidden dimension (`hid_dim`)  
-- L2 regularization  
-- Dropout  
-- Batch normalization (`use_bn`)  
-- Learning rate (`lr`)  
-- Learning rate scheduler  
-- Early stopping  
+**Rationale:**  
+Although MSE on normalized data is useful for optimization, MAE and inverse-scaled metrics provide more interpretable performance comparisons.
 
-**Design Rationale:**
-- Regularization techniques reduce overfitting in sparse traffic observations  
-- Learning rate scheduling improves convergence stability  
-- Increased model capacity enables better spatio-temporal feature learning  
+### Hyperparameters
+- Original: limited hyperparameter tuning (mainly early stopping)  
+- This study: extended configuration including:
+  - hidden dimension (`hid_dim`)  
+  - L2 regularization  
+  - batch normalization (`use_bn`)  
+  - dropout  
+  - learning rate (`lr`)  
+  - learning rate scheduler  
+  - early stopping  
 
----
-
-## 📐 Comparison with Original Work
-
-| Aspect | Original Study | This Work |
-|--------|----------------|-----------|
-| Study Area | Beijing road network | Seoul urban road network |
-| Baseline Models | OLS, RF, ANN, statistical ML models | MLP (fully connected neural network) |
-| Input Design | Traffic-as-image representation | Same framework adapted to Seoul topology |
-| Evaluation Metrics | MSE, MAE, scaled metrics | MSE, MAE (also reported in original scale) |
-| Hyperparameter Scope | Limited tuning (mainly early stopping) | Extended systematic tuning (regularization, scheduler, architecture depth) |
+**Rationale:**
+- `hid_dim`: improves model capacity  
+- Regularization methods (L2, dropout, batch norm): reduce overfitting and improve generalization  
+- Learning rate scheduler: stabilizes optimization and improves convergence when combined with early stopping  
 
 ---
 
-## 📈 Key Contributions
+## 🧠 Summary
 
-- Adaptation of a CNN-based traffic forecasting framework to a new metropolitan-scale dataset (Seoul)  
-- Systematic evaluation of CNN depth effects on predictive performance  
-- Empirical comparison between representation learning (CNN) and fully connected baselines (MLP)  
-- Extension of hyperparameter space for improved model robustness and generalization  
-
+This project investigates CNN-based spatio-temporal learning for traffic speed prediction and evaluates the impact of model depth, temporal input windows, and baseline architectures. The results highlight the trade-off between CNN-based feature extraction and simpler fully connected models in urban traffic forecasting.
 ---
 
 ## 🧠 Summary
