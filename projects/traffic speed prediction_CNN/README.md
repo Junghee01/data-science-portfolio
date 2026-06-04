@@ -28,7 +28,7 @@ The study reproduces and evaluates the four experimental settings proposed in th
 
 ### Model Architectures
 
-- **MLP (Fully Connected Network):** baseline model  
+- **MLP:** baseline model  
 - **2D CNN Models:** 2–4 convolutional layers (Depth 2 to Depth 4)  
 - **Input:** Spatio-temporal traffic matrices converted into 2D image-like tensors using past 30- and 40-minute windows  
 - **Output:** Future traffic speed prediction (10-minute and 20-minute horizons)  
