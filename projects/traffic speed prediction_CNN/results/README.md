@@ -45,11 +45,13 @@
 ---
 
 ## 📊 Task 4 Results
-
+![image](https://github.com/user-attachments/assets/c186d492-e6bf-4710-81e0-d3f658ffdaf7)
 * In Task 4, both Depth 2 and Depth 4 models achieve strong performance; however, Depth 2 slightly outperforms Depth 4 in terms of MSE.
 * As in previous tasks, experiments with an MLP model show that CNN provides superior performance.
+![image](https://github.com/user-attachments/assets/12eef6d8-14fa-4dec-9b9a-b210afa6a9a8)
 * The figures below illustrate heatmap comparisons between predicted and actual values for both models.
-
+![image](https://github.com/user-attachments/assets/f2902b40-aae4-4a6e-b5c7-e52b35d54035)
+![image](https://github.com/user-attachments/assets/addf893b-f28d-4b76-a8df-ef43a5e6aeab)
 ---
 
 ## 📋 Overall Comparison (Task 1–Task 4)
