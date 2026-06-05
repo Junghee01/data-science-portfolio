@@ -61,3 +61,6 @@
 * From the comparison between Task 1 and Task 2, when predicting traffic speed 10 minutes ahead, using 30 minutes of historical data yields higher accuracy than using 40 minutes.
 * From the comparison between Task 3 and Task 4, when predicting traffic speed 20 minutes ahead, using 40 minutes of historical data results in better predictive performance than using 30 minutes.
 
+---
+## Discussion
+These findings suggest that grid-based convolutional architectures may not be optimal for irregular road networks, motivating the exploration of graph-based models in future work.
