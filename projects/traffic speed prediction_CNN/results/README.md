@@ -26,7 +26,7 @@
 ![imgage](https://github.com/user-attachments/assets/672762be-6e76-4667-a003-6c161492e9a7)
 * Similar to Task 1, the Depth 2 CNN model achieves the lowest MSE.
 * The range shown in the figure reflects variations across different hidden dimensions. Regardless of the hidden dimension, the Depth 2 model consistently demonstrates superior performance.
-![image] (https://github.com/user-attachments/assets/2833c73b-0bd3-40ed-a1cb-85b862612047)
+![image](https://github.com/user-attachments/assets/2833c73b-0bd3-40ed-a1cb-85b862612047)
 * A Multi-Layer Perceptron (MLP) model was also evaluated under identical experimental conditions, with results compared against CNN.
 * The CNN model shows marginally better performance than the MLP model.
 * The bottom figures illustrate heatmap visualizations of predictions from both the MLP and the best CNN model compared to ground truth.
