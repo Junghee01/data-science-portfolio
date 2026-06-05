@@ -55,7 +55,7 @@
 ---
 
 ## 📋 Overall Comparison (Task 1–Task 4)
-
+![image](https://github.com/user-attachments/assets/fba9e4c9-1947-47c1-8b54-3fc739384052)
 * Across all tasks, CNN models consistently outperform MLP models, achieving up to 6.14% improvement and an average performance gain of 3.80%.
 * From the comparison between Task 1 and Task 2, when predicting traffic speed 10 minutes ahead, using 30 minutes of historical data yields higher accuracy than using 40 minutes.
 * From the comparison between Task 3 and Task 4, when predicting traffic speed 20 minutes ahead, using 40 minutes of historical data results in better predictive performance than using 30 minutes.
