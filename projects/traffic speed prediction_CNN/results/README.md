@@ -35,11 +35,13 @@
 ---
 
 ## 📊 Task 3 Results
-
+![image](https://github.com/user-attachments/assets/f9f70817-4103-46f2-8512-be1a7577378b)
 * The Depth 2 CNN model again achieves the lowest MSE.
 * Comparative experiments using an MLP model indicate that CNN consistently outperforms MLP.
+![image](https://github.com/user-attachments/assets/a516f471-ef06-4464-b2cd-d381e0c3657b) 
 * The figures below present heatmap visualizations comparing predicted and actual values for both models.
-
+![image](https://github.com/user-attachments/assets/d055a3d6-5cb9-46c6-b020-038c45680e30)
+![image](https://github.com/user-attachments/assets/7d8f85d2-8523-46a2-8d5a-914902a08a83)
 ---
 
 ## 📊 Task 4 Results
