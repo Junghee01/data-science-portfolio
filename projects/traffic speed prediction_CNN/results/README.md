@@ -17,6 +17,7 @@
   1. The use of L2 regularization and dropout, which mitigate overfitting and enhance generalization.
   2. Early stopping based on validation performance, preventing over-training.
 
+![image](https://github.com/user-attachments/assets/6a1077f2-e701-4fcb-9099-a6716b60a1d0)
 * The figure above presents a heatmap visualization comparing ground truth and predicted values using the best-performing CNN model (Depth 2).
 
 ---
