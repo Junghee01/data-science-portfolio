@@ -9,8 +9,8 @@
 
 * In contrast to the referenced study—where the best performance on Beijing traffic data was achieved with a Depth 4 model—our results suggest that performance differences may arise from dataset characteristics. Specifically, the Seoul urban core dataset appears to favor a shallower architecture.
 
-  1. If the spatial structure of the Seoul traffic data deviates from a regular grid or exhibits weak correlations between adjacent roads, deeper architectures may overfit to noise, leading to degraded performance.
-  2. If the dataset is relatively small or exhibits limited variability, a shallower model (e.g., Depth 2) may generalize more effectively.
+  1. If the spatial structure of the Seoul traffic data exhibits weak correlations between adjacent roads, deeper architectures may overfit to noise, leading to degraded performance.
+  2. If the dataset exhibits limited variability, a shallower model (e.g., Depth 2) may generalize more effectively.
 
 * The lower MSE observed on the test set can be attributed to:
 
