@@ -1,6 +1,7 @@
 # Seoul Urban Core – Traffic Speed Prediction Results
 
 ## 📊 Task 1 Results
+ ![image](https://github.com/user-attachments/assets/d0dbe46b-6fd3-4cc9-9e24-a40f18efa0a3)
 
 * Compared to a fully connected model (Depth 1), CNN-based models (Depth 2–Depth 4) achieve substantially lower Mean Squared Error (MSE).
 
