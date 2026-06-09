@@ -11,10 +11,7 @@ Experimental results demonstrate that the proposed CNN-based method achieves, on
 ## 1. Study Area and Task Description
 ![image](https://github.com/user-attachments/assets/ba4fd260-d210-446e-83f8-02f2992f8587)
 
-This study considers two real-world traffic networks in Beijing, China:
-
-* **Beijing Second Ring Road**
-* **Northeastern Beijing Traffic Network**
+This study considers two real-world traffic networks in Beijing, China: **(a)Beijing Second Ring Road**, **(b)Northeastern Beijing Traffic Network**
 
 To evaluate the proposed model, four prediction tasks are defined under different input-output temporal settings:
 
