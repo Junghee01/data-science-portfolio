@@ -23,7 +23,7 @@ This study considers two real-world traffic networks in Beijing, China: **(a)Bei
 ![image](https://github.com/user-attachments/assets/dee1c858-de73-4c01-9e45-b45ed1ea556a)
 * As illustrated in Figure 2, a CNN model is constructed by repeatedly stacking convolutional layers and max-pooling layers, followed by a fully connected (FC) layer at the final stage.
 * The formulation of the model can be expressed as follows:
-#####  ![image](https://github.com/user-attachments/assets/bce41be6-6fde-4afe-b6f6-626d43a3e1bc)
+    #####  ![image](https://github.com/user-attachments/assets/bce41be6-6fde-4afe-b6f6-626d43a3e1bc)
 ## 2. Model Configuration and Training Details
 
 * As shown in Table 1, four CNN-based models (**Depth1**, **Depth2**, **Depth3**, and **Depth4**) are constructed to compare performance across different network depths.
