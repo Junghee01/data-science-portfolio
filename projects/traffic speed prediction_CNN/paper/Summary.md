@@ -1,4 +1,4 @@
-### [📄Literature Review] 
+### [📄Paper] 
 - Ma, X., Dai, Z., He, Z., Ma, J., Wang, Y., & Wang, Y. (2017). *Learning traffic as images: A deep convolutional neural network for large-scale transportation network speed prediction*. Sensors, 17(4), 818.
 (https://doi.org/10.3390/s17040818)
 ### [📝Paper Summary]
