@@ -10,6 +10,7 @@ This project investigates short-term traffic speed forecasting by transforming s
 - **Key Experiments:** Analysis of CNN performance with respect to network depth; Benchmarking against Multilayer Perceptron (MLP) as a fully connected baseline model.
 - **Results:** Convolutional architectures outperform simpler fully connected baseline models in real-world traffic prediction tasks, and the CNN with two convolutional layers achieves the lowest Mean Squared Error (MSE) among all tested depths.
 - **Insights:** For the Seoul urban core dataset, a shallower CNN architecture yields the best performance. This may be attributed to the low volatility and relatively simple spatio-temporal dynamics of the data, where spatial correlation is relatively weak or locally constrained. In such cases, deeper architectures may introduce unnecessary model complexity, leading to overfitting and reduced generalization performance.
+- **Insights:** For the Seoul urban core dataset, a shallower CNN architecture yields the best performance. This is likely due to the low volatility and relatively simple spatiotemporal patterns of the data, where spatial dependencies are weak or locally constrained. In such cases, deeper architectures may introduce unnecessary complexity, leading to overfitting and reduced generalization performance.
 
 → [View Project Details](https://github.com/Junghee01/data-science-portfolio/tree/main/projects/traffic%20speed%20prediction_CNN)
 
