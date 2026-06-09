@@ -4,8 +4,8 @@
 
 This project investigates short-term traffic speed forecasting by transforming spatio-temporal traffic data into 2D image representations and applying Convolutional Neural Networks (CNNs) to model network-wide future traffic conditions.
 
-- Dataset: Seoul TOPIS traffic data (April 2018)
-- Tech Stack: Python, PyTorch, Pandas, Seaborn
+- **Dataset:** Seoul TOPIS traffic data (April 2018)
+- **Tech Stack:** Python, PyTorch, Pandas, Seaborn
 - Methodology: Construction of spatio-temporal matrices to encode traffic dynamics as images; development and evaluation of CNN architectures with varying depths; performance comparison against a baseline MLP model
 - Key Experiments:
 Analysis of CNN performance with respect to network depth
