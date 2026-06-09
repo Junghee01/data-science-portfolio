@@ -1,7 +1,6 @@
-### [📄Literature Review (Paper Summary)] https://doi.org/10.3390/s17040818
-##### References
+### [📄Literature Review (Paper Summary)] 
 - Ma, X., Dai, Z., He, Z., Ma, J., Wang, Y., & Wang, Y. (2017). *Learning traffic as images: A deep convolutional neural network for large-scale transportation network speed prediction*. Sensors, 17(4), 818.
-
+(https://doi.org/10.3390/s17040818)
 ### [📝Paper Summary]
 This study proposes a convolutional neural network (CNN)-based approach that learns traffic conditions as images and predicts traffic speeds across large-scale transportation networks with high accuracy. Spatiotemporal variations in traffic flow are transformed into a two-dimensional spatiotemporal matrix, enabling the representation of temporal and spatial relationships in the form of images, to which a CNN model is applied.
 
